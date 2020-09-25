@@ -1,0 +1,44 @@
+#search-bar {
+  justify-content: space-between;
+  
+  .view-switcher {
+    i {
+      font-size: 24px;
+    }
+    
+    i+i {
+      margin-left : 10px;
+    }
+    
+    i:hover {
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.col {
+    margin-bottom: 36px;
+}
+
+.row {
+    margin-bottom: 36px;
+}
+
+
+.item {
+    &__body {
+        display: flex;
+        align-items: center;
+        padding-right: 12px;
+        background-color: #fff;
+    }
+
+    // .item 每兩個改色一個
+    &:nth-child(2n+1) {
+
+        .item__body {
+            background-color: #f8f9fa;
+        }
+    }
+}
